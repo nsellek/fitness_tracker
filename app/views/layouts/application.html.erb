@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FitnessTracker</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>FitnessTracker</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+</head>
+<body>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <!-- Passpartu -->
+  <div class="passpartu passpartu_left"></div>
+  <div class="passpartu passpartu_right"></div>
+  <div class="passpartu passpartu_top"></div>
+  <div class="passpartu passpartu_bottom"></div>
+  <!-- Passpartu End -->
 
-  <body>
+  <div class="page" id="page">
+    <div class="head_bck" data-color="#2475cd"  data-opacity="0.5"></div>
+    <!-- Header -->
+    <header class="simple_menu header_no_tl">
+      <!-- Logo -->
+      <div class="logo pull-left">
+        <a href="#"><b>Fitness Tracker</b></a>
+      </div>
+      <!-- Header Buttons -->
+      <div class="header_btns_wrapper">
+        <!-- Main Menu Btn -->
+        <div class="main_menu"><i class="ti-menu"></i><i class="ti-close"></i></div>
+        <!-- Sub Menu -->
+        <div class="sub_menu">
+          <div class="sub_cont">
+            <ul>
+              <li><a href="#" class="parents">Home</a>
+                <ul class="mega_menu">
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="02_01_multipage_creative.html">Creative</a></li>
+                      <li><a href="02_02_multipage_construct.html">Building</a></li>
+                      <li><a href="02_03_multipage_sport.html">Sport</a></li>
+                      <li><a href="02_04_multipage_yoga.html">Yoga</a></li>
+                      <li><a href="02_05_multipage_music.html">Music</a></li>
+                      <li><a href="02_06_multipage_wedding.html">Wedding</a></li>
+                      <li><a href="02_07_multipage_arch.html">Architecture</a></li>
+                      <li><a href="02_08_multipage_photo.html">Photo</a></li>
+                    </ul>
+                  </li>
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="02_09_multipage_medicine.html">Medicine</a></li>
+                      <li><a href="02_10_multipage_fashion.html">Fashion</a></li>
+                      <li><a href="02_11_multipage_hotel.html">Hotel</a></li>
+                      <li><a href="02_12_multipage_cafe.html">Cafe</a></li>
+                      <li><a href="02_13_multipage_pizza.html">Pizza</a></li>
+                      <li><a href="02_14_multipage_asia.html">Asian Cafe</a></li>
+                      <li><a href="02_15_multipage_spa.html">Spa</a></li>
+                      <li><a href="02_16_multipage_travel.html">Travel</a></li>
+                    </ul>
+                  </li>
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="02_17_multipage_child.html">Children</a></li>
+                      <li><a href="02_18_multipage_furniture.html">Furniture</a></li>
+                      <li><a href="02_19_multipage_corporate.html">Corporate</a></li>
+                      <li><a href="02_20_multipage_lawyer.html">Lawyer</a></li>
+                      <li><a href="02_21_multipage_black_studio.html">Black Studio</a></li>
+                      <li><a href="02_22_multipage_retro.html">Retro</a></li>
+                      <li><a href="02_23_multipage_dentist.html">Dentist</a></li>
+                      <li><a href="02_24_multipage_videoslider.html">Video Background</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" class="parents">Pages</a>
+                <ul class="mega_menu">
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="03_01_page_about_us.html">About Us</a></li>
+                      <li><a href="03_02_page_services.html">Services</a></li>
+                      <li><a href="03_03_page_contact.html">Contacts</a></li>
+                      <li><a href="03_04_page_faq.html">FAQ</a></li>
+                      <li><a href="03_05_page_countdown.html">Countdown</a></li>
+                    </ul>
+                  </li>
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="03_06_page_login.html">Login</a></li>
+                      <li><a href="03_07_page_register.html">Register</a></li>
+                      <li><a href="03_08_page_confirmation.html">Confirmation</a></li>
+                      <li><a href="03_09_page_404.html">404</a></li>
+                      <li><a href="03_10_page_comingsoon.html">Coming Soon</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" class="parents">Blog</a>
+                <ul class="mega_menu">
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="04_01_blog_sidebar_left.html">Blog Sidebar Left</a></li>
+                      <li><a href="04_02_blog_sidebar_right.html">Blog Sidebar Right</a></li>
+                      <li><a href="04_03_blog_masonry_sidebar_left.html">Blog Masonry Sidebar Left</a></li>
+                      <li><a href="04_04_blog_masonry_sidebar_right.html">Blog Masonry Sidebar Right</a></li>
+                      <li><a href="04_05_blog_sidebar_no_sidebar.html">Blog Sidebar Full Width</a></li>
+                    </ul>
+                  </li>
+                  <li class="mega_sub">
+                    <ul>
+                      <li><a href="04_06_blog_masonry_full_2col.html">Blog Masonry Two Columns</a></li>
+                      <li><a href="04_07_blog_masonry_full_3col.html">Blog Masonry Three Columns</a></li>
+                      <li><a href="04_08_blog_single_sidebar_left.html">Blog Single Sidebar Left</a></li>
+                      <li><a href="04_09_blog_single_sidebar_right.html">Blog Single Sidebar Right</a></li>
+                      <li><a href="04_10_blog_single_sidebar_no_sidebar.html">Blog Single Full Width</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><%= link_to 'Log In', nil %></li>
+              <li><%= link_to 'Sign Up', new_account_path %></li>
+              <!-- Search End-->
+            </ul>
+          </div>
+        </div>
+        <!-- Sub Menu End -->
+      </div>
+      <!-- Header Buttons End -->
+      <!-- Up Arrow -->
+      <a href="#page" class="up_block go"><i class="fa fa-angle-up"></i></a>
+    </header>
     <%= yield %>
-  </body>
+  </div>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://use.fontawesome.com/853443ed56.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.js'></script>
+</body>
 </html>
