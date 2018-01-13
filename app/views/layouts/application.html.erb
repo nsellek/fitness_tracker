@@ -118,8 +118,13 @@
                   </li>
                 </ul>
               </li>
-              <li><%= link_to 'Log In', nil %></li>
-              <li><%= link_to 'Sign Up', new_account_path %></li>
+              <% if current_user %>
+                <li><%= link_to 'Log Out', session_delete_path(current_user.id) %></li>
+                <li><a>Welcome <%= current_user.first_name %></a></li>
+              <% else %>
+                <li><%= link_to 'Log In', new_session_path %></li>
+                <li><%= link_to 'Sign Up', new_account_path %></li>
+              <% end %>
               <!-- Search End-->
             </ul>
           </div>
